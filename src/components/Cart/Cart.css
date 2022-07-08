@@ -1,0 +1,10 @@
+.Cart {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 60px;
+    right: 0;
+}

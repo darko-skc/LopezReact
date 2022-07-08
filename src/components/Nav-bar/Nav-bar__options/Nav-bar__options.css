@@ -1,0 +1,11 @@
+.Nav-bar__options {
+    width: 280px;
+    height: 2.5rem;
+    align-items: center;
+    margin: 0 0.8rem;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}

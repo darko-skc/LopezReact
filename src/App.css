@@ -6,16 +6,14 @@
   grid-auto-flow: row;
   grid-template-areas:
     "Side-bar Nav-bar Nav-bar"
-    "Side-bar Games-section Games-recomendation-section";
+    "Side-bar Index-section Index-section";
 }
 
 .Nav-bar { grid-area: Nav-bar; }
 
 .Side-bar { grid-area: Side-bar; }
 
-.Games-section { grid-area: Games-section; }
-
-.Games-recomendation-section { grid-area: Games-recomendation-section; }
+.Index-section { grid-area: Index-section; }
 
 
 

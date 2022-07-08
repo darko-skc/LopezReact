@@ -1,0 +1,8 @@
+.cart-icon {
+    transition: 0.5s;
+}
+
+.cart-icon:hover {
+    cursor: pointer;
+    color: rgb(209, 209, 209);
+}

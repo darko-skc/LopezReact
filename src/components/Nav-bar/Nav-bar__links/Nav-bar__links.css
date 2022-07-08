@@ -1,0 +1,21 @@
+.Nav-bar__link {
+    padding: 0 0.7rem;
+    height: 2.5rem;
+    list-style: none;
+    margin: 0 0.4rem;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.Nav-bar__link a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.Nav-bar__link:hover {
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(40, 87, 209);
+}
