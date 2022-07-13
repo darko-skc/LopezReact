@@ -13,9 +13,9 @@ const add_cart = (e) =>{
         id : 1,
         name : name,
         price : price,
-        cantidad : 1,
+        amount : 1,
     }
-    cart.hasOwnProperty(add_game.id) && (add_game.cantidad = cart[add_game.id].cantidad + 1)
+    cart.hasOwnProperty(add_game.id) && (add_game.amount = cart[add_game.id].amount + 1)
     cart[add_game.id] = {...add_game}
     return cart
 }
