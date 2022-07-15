@@ -9,8 +9,9 @@ const add_cart_buttom = (e) =>{
 const add_cart = (e) =>{
     const name = document.getElementById('Index-game__name').textContent
     const price = document.getElementById('Index-game__price').textContent
+    const id = document.getElementById('Index-game__buttom').dataset.id
     const add_game = {
-        id : 1,
+        id : id,
         name : name,
         price : price,
         amount : 1,
