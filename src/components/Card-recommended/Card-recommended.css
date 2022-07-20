@@ -1,43 +1,43 @@
-.Index-game{
+.Card-game{
     margin: 5rem auto;
     width: 270px;
     color: rgb(255,255,255);
 }
 
-.Index-game__img {
+.Card-game__img {
     width: 100%;
     height: 150px;
     border-radius: 20px;
     margin-bottom: 0.8rem;
 }
 
-.Index-game__img img {
+.Card-game__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
 
-.Index-game__box {
+.Card-game__box {
     display: flex;
     justify-content: space-between;
     color: rgb(255,255,255);
 }
 
-.Index-game__info {
+.Card-game__info {
     display:block;
     height: 50px;
 }
 
 
 
-.Index-game__cart {
+.Card-game__cart {
     width: 100px;
     height: 50px;
     display: flex;
 }
 
-.Index-game__price , .Index-game__buttom {
+.Card-game__price , .Card-game__buttom {
     width: 50px;
     background-color: rgb(40, 87, 209);
     border-radius: 13px;
@@ -47,11 +47,11 @@
     transition: 0.5s;
 }
 
-.Index-game__price {
+.Card-game__price {
     background-color: transparent;
 }
 
-.Index-game__buttom:hover {
+.Card-game__buttom:hover {
     color: rgb(196, 196, 196);
     background-color: rgb(14, 63, 189);
     cursor: pointer;   
