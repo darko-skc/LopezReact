@@ -4,7 +4,7 @@ import './Main-games.css'
 const MainGames = () =>{
     return(
         <div className="Main-games">
-            <CardDetail></CardDetail>
+            
         </div>
     )
 }

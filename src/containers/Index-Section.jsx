@@ -27,7 +27,7 @@ const IndexSection = () =>{
     
 
     return(
-            <div className='Index-section'>
+            <div className='Main-section'>
                 <MainGames></MainGames>
                 <RecommendedGames allGames={allGames}></RecommendedGames>
             </div>

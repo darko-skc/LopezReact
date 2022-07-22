@@ -1,15 +1,15 @@
 import './Card-detail.css'
 
-const CardDetail = () =>{
+const CardDetail = ({name,price_standard,frontpage_img}) =>{
     return(
         <div className="Card-detail">
             <div className="Card-detail__title">
                 <div className="Card-detail__title_img">
-                    <img src="/image/farcry6/frontpage.jpeg" alt="" />
+                    <img src={frontpage_img} alt="" />
                 </div>
                 <div className='Card-detail__box'>
                     <div className="Card-detail__title_name">
-                        <h2>FarCry 6</h2>
+                        <h2>{name}</h2>
                     </div>
                     <div className="Card-detail__title_platform">
                         <span>Steam</span>
@@ -27,8 +27,8 @@ const CardDetail = () =>{
                     </div>
                 </div>
                 <div className="Card-detail__info">
-                    <h2>FarCry 6</h2>
-                    <span>59.99</span>
+                    <h2>{name}</h2>
+                    <span>{price_standard}</span>
                     <span>Activation: Steam</span>
                     <span>Product activated by <a href="">activation key</a></span>
                     <div className='Card-detail__info__buttom'>BUY</div>
