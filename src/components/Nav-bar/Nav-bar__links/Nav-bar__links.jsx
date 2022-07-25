@@ -1,8 +1,9 @@
 import './Nav-bar__links.css'
-
-const NavBarLinks = (props) =>{
+import { NavLink } from 'react-router-dom'
+const NavBarLinks = ({link,name}) =>{
     return (
-        <li className="Nav-bar__link"><a href={`${props.link}`}>{`${props.name}`}</a></li>
+        <li className="Nav-bar__link"><NavLink to={link}>{name}</NavLink></li>
+
     )
 }
 

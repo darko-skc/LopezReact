@@ -1,4 +1,4 @@
-.Main-section {
+.Index-section {
     display: grid;
     grid-template-columns: 3.1fr 0.75fr;
     grid-template-rows: 1fr;
@@ -11,7 +11,7 @@
     overflow: scroll;
 }
 
-.Main-section::-webkit-scrollbar {
+.Index-section::-webkit-scrollbar {
     display: none;
   }
 

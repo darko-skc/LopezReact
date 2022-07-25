@@ -8,14 +8,13 @@ const IndexSection = () =>{
 
     const [allGames, setGames] = useState([]);
     const [majorGames, oldMajor] = useState([]);
-
-    console.log(allGames)
-    console.log(majorGames)
     const getGames = async() =>{
       try{
         const res = await fetch('/assets/Json/DATA.json')
         const data = await res.json()
-        setGames(data)
+        const recommended = data.filter( item => item.keyword == 'FRC'
+        )
+        setGames(recommended)
         oldMajor(data[0]) 
       }catch(error){
         console.log(error)
@@ -25,10 +24,10 @@ const IndexSection = () =>{
           getGames()
     },[])
     
-
+    
     return(
-            <div className='Main-section'>
-                <MainGames></MainGames>
+            <div className='Index-section'>
+                <MainGames majorGames={majorGames}></MainGames>
                 <RecommendedGames allGames={allGames}></RecommendedGames>
             </div>
     )

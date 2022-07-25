@@ -1,5 +1,6 @@
 .Side-bar {
     width: 100%;
+    min-width: 77px;
     height: 100vh;
     border-right: 0.1px rgba(255, 255, 255,0.2) solid;
     position: sticky;

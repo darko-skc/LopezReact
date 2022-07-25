@@ -1,10 +1,10 @@
-import CardDetail from '../Card-detail/Card-detail'
+import CardMain from '../Card-Main/Card-Main'
 import './Main-games.css'
 
-const MainGames = () =>{
+const MainGames = ({majorGames}) =>{
     return(
         <div className="Main-games">
-            
+            <CardMain majorGames={majorGames}/>
         </div>
     )
 }

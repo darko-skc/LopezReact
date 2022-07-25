@@ -18,6 +18,10 @@
     padding: 0 2rem;
 }
 
+.Card-detail__title_platform {
+    margin-top: 2rem;
+}
+
 .Card-detail__title_platform span {
     margin-right: 1rem;
     background-color: rgb(42, 99, 241);
@@ -27,7 +31,7 @@
 }
 
 .Card-detail__title_platform span:hover{
-    background-color: rgb(40, 87, 209);
+    background-color: rgb(25, 56, 134);
     cursor: pointer;
 }
 

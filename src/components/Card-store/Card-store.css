@@ -1,0 +1,44 @@
+.CardStore {
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+    width: 230px;
+    height: 330px;
+    position: relative;
+}
+
+.CardStore img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.CardStoreInfo {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    position: absolute;
+    top: 272px;
+    background-color: rgba(37, 121, 96, 0.9);
+    display: flex;
+    justify-content: space-between;
+    height: 58px;
+    padding: 0.5rem 0.2rem;
+}
+
+.CardStoreNameBox {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.CardStoreNameBox p{
+    color: rgb(203, 203, 203);
+    font-size: 11px;
+}
+
+.CardStorePriceBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}

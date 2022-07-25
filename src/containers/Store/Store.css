@@ -1,0 +1,42 @@
+.Store {
+    padding: 1.6rem 0.8rem;
+    height: 100vh;
+    overflow: scroll;
+    color: rgb(255, 255, 255);
+}
+
+.Store::-webkit-scrollbar {
+    display: none;
+  }
+
+.filterBox {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.filterBox a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.filterItem {
+    margin-right: 1rem;
+    background-color: rgb(42, 99, 241);
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.filterItem:hover{
+    background-color: rgb(25, 56, 134);
+    cursor: pointer;
+}
+
+.StoreGamesBox {
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
