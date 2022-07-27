@@ -15,7 +15,7 @@
         "gameplay_img_5" : "/image/farcry6/gameplay5.webp",
         "frontpage_img" : "/image/farcry6/frontpage.jpeg",
         "frontcard_img" : "/image/farcry6/frontcard.jpeg",
-        "trailer" : "https://www.youtube.com/watch?v=tSDMwngdkF4"
+        "trailer" : "https://www.youtube.com/embed/tSDMwngdkF4"
     },
     {
         "id" : 1,
@@ -33,7 +33,7 @@
         "gameplay_img_5" : "/image/farcry6/gameplay5.webp",
         "frontpage_img" : "/image/farcry5/frontpage.jpeg",
         "frontcard_img" : "/image/farcry5/frontcard.jpeg",
-        "trailer" : "https://www.youtube.com/watch?v=4hVME3O9wf4"
+        "trailer" : "https://www.youtube.com/embed/4hVME3O9wf4"
     },
     {
         "id" : 2,
@@ -51,7 +51,7 @@
         "gameplay_img_5" : "/image/farcry6/gameplay5.webp",
         "frontpage_img" : "/image/farcry4/frontpage.jpeg",
         "frontcard_img" : "/image/farcry4/frontcard.jpeg",
-        "trailer" : "https://www.youtube.com/watch?v=6d60v1OErEY"
+        "trailer" : "https://www.youtube.com/embed/6d60v1OErEY"
     },
     {
         "id" : 3,
@@ -68,7 +68,7 @@
         "gameplay_img_5" : "/image/farcry6/gameplay5.webp",
         "frontpage_img" : "/image/farcry3/frontpage.jpeg",
         "frontcard_img" : "/image/farcry3/frontcard.jpeg",
-        "trailer" : "https://www.youtube.com/watch?v=E6qNyXw4250"
+        "trailer" : "https://www.youtube.com/embed/E6qNyXw4250"
     },
     {
         "id" : 4,
@@ -84,7 +84,7 @@
         "gameplay_img_5" : "/image/farcry6/gameplay5.webp",
         "frontpage_img" : "/image/farcry2/frontpage.jpeg",
         "frontcard_img" : "/image/farcry2/frontcard.webp",
-        "trailer" : "https://www.youtube.com/watch?v=gf5h4co4Ydc"
+        "trailer" : "https://www.youtube.com/embed/gf5h4co4Ydc"
     },
     {
         "id" : 5,
@@ -100,7 +100,7 @@
         "gameplay_img_5" : "/image/farcry6/gameplay5.webp",
         "frontpage_img" : "/image/farcry1/frontpage.webp",
         "frontcard_img" : "/image/farcry1/frontcard.webp",
-        "trailer" : "https://www.youtube.com/watch?v=NeyY5P35ARs"
+        "trailer" : "https://www.youtube.com/embed/NeyY5P35ARs"
     },
     {
         "id" : 6,
@@ -116,6 +116,6 @@
         "gameplay_img_5" : "/image/farcry6/gameplay5.webp",
         "frontpage_img" : "/image/gtav/frontpage.jpeg",
         "frontcard_img" : "/image/gtav/frontcard.jpg",
-        "trailer" : "https://www.youtube.com/watch?v=QkkoHAzjnUs"
+        "trailer" : "https://www.youtube.com/embed/QkkoHAzjnUs"
     }
 ]

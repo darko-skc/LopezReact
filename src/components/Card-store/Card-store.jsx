@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom'
 import './Card-store.css'
 
-const CardStore  = ({img,brief,name,price}) =>{
+const CardStore  = ({img,id,brief,name,price}) =>{
     return(
+        
         <div className='CardStore'>
+            <Link to={`/detail/${id}`}>
             <img src={img}/>
             <div className='CardStoreInfo'>
                 <div className='CardStoreNameBox'>
@@ -16,7 +19,9 @@ const CardStore  = ({img,brief,name,price}) =>{
                     <span className='CardStorePrice'>{price}</span>
                 </div>
             </div>
+            </Link>
         </div>
+        
     )
 }
 

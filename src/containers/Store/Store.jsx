@@ -36,7 +36,7 @@ const Store = () =>{
             </div>
             <div className='StoreGamesBox'>
                 {allGames.map((game)=>(
-                    <CardStore key={game.id} img={game.frontcard_img} brief={game.brief_description} name={game.name} price={game.price_standard} />
+                    <CardStore key={game.id} id={game.id} img={game.frontcard_img} brief={game.brief_description} name={game.name} price={game.price_standard} />
                 ))}
             </div>
         </div>

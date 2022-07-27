@@ -93,3 +93,9 @@
     background-color: rgb(14, 63, 189);
     cursor: pointer;   
 }
+
+.CartLink {
+    text-decoration: none;
+    color: white;
+    
+}

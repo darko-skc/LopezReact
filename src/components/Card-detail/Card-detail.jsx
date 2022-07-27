@@ -1,6 +1,22 @@
+import ItemCount from '../ItemCount/ItemCount'
 import './Card-detail.css'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+const CardDetail = ({name,price_standard,frontpage_img,trailer}) =>{
 
-const CardDetail = ({name,price_standard,frontpage_img}) =>{
+    const [buttonType, setButtonType] = useState('buy')
+
+
+    const BuyButton = ({changeButton}) =>{
+        return (
+            <div className='Card-detail__info__buttom' onClick={changeButton}>BUY</div>
+        )
+    }
+
+    const addCartLink = () =>{
+        setButtonType('cart')
+    }
+
     return(
         <div className="Card-detail">
             <div className="Card-detail__title">
@@ -19,7 +35,7 @@ const CardDetail = ({name,price_standard,frontpage_img}) =>{
             </div>
             <div className='Card-detail__content'>
                 <div className="Card-detail__media">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tSDMwngdkF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src={trailer} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div className="Card-detail__img">
                         <img src="/image/farcry6/gameplay1.jpeg" alt="" />
                         <img src="/image/farcry6/gameplay2.jpeg" alt="" />
@@ -31,7 +47,14 @@ const CardDetail = ({name,price_standard,frontpage_img}) =>{
                     <span>{price_standard}</span>
                     <span>Activation: Steam</span>
                     <span>Product activated by <a href="">activation key</a></span>
-                    <div className='Card-detail__info__buttom'>BUY</div>
+                    <ItemCount />
+                    {
+                        buttonType === 'buy' ?
+                            <BuyButton changeButton={addCartLink}/>
+                        :
+                            <div className='Card-detail__info__buttom'><Link to={'/cart'} className="CartLink">CARRITO</Link></div>
+                    }
+                    
                 </div>
             </div>
         </div>

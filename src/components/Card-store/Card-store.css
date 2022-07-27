@@ -6,6 +6,11 @@
     position: relative;
 }
 
+.CardStore a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
 .CardStore img{
     border-radius: 10px;
     width: 100%;
