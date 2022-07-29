@@ -12,11 +12,15 @@ const CardDetail = ({product}) =>{
         let repeat = cartList.find(el => el.id === product.id)
         
         if (repeat){
-            console.log('ya se encuentra agregado')
+            count += repeat.amount
+            cartList[repeat.id].amount = count
         } else {
             addToCart({ ...product, amount: count})
-        }   
+        }  
+        
     }
+
+    console.log(cartList)
 
     return(
         <div className="Card-detail">
