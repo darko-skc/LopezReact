@@ -6,11 +6,13 @@ import IndexSection from './containers/Index-Section'
 import { Routes, Route, Navigate} from 'react-router-dom'
 import Store from './containers/Store/Store'
 import CartContainer from './containers/CartContainer/CartContainer'
+import CartContextProvider from './context/CartContext'
 
 const DetailCard = lazy(() => import('./components/Detail-card/Detail-card'))
 
 function App() {
   return (
+    <CartContextProvider>
     <div className="App">
       <SideBar />
       <NavBar />
@@ -30,6 +32,7 @@ function App() {
       </Routes>
       </div>
     </div>
+    </CartContextProvider>
   )
 }
 

@@ -22,7 +22,7 @@ const DetailCard = () =>{
 
     return(
     
-        <CardDetail name={product.name} price_standard={product.price_standard} frontpage_img={product.frontpage_img} trailer={product.trailer}/>
+        <CardDetail product={product}/>
     )
 
 }
