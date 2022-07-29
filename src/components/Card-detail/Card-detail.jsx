@@ -8,7 +8,14 @@ const CardDetail = ({product}) =>{
 
     const {addToCart, cartList} = useContext(CartContext)
     const onAdd = (count) => {
-        addToCart({ ...product, amount: count})
+        
+        let repeat = cartList.find(el => el.id === product.id)
+        
+        if (repeat){
+            console.log('ya se encuentra agregado')
+        } else {
+            addToCart({ ...product, amount: count})
+        }   
     }
 
     return(
