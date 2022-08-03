@@ -1,5 +1,5 @@
 .Card-game{
-    margin: 5rem auto;
+    margin: 4.5rem auto;
     width: 270px;
     color: rgb(255,255,255);
 }
@@ -37,9 +37,10 @@
 
 
 .Card-game__cart {
-    width: 100px;
+    width: 108px;
     height: 50px;
     display: flex;
+    justify-content: space-between;
 }
 
 .Card-game__price , .Card-game__buttom {
@@ -54,10 +55,35 @@
 
 .Card-game__price {
     background-color: transparent;
+    
 }
 
 .Card-game__buttom:hover {
     color: rgb(196, 196, 196);
     background-color: rgb(14, 63, 189);
     cursor: pointer;   
+}
+
+
+.Card-game__version {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Card-game__version p {
+    color: rgb(162, 162, 162);
+    margin-left: 0.3rem;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.Card-game__version i {
+    color: rgb(234, 152, 0);
+}
+
+.Card-game__version span {
+    color: rgb(162, 162, 162);
+    margin-left: 0.3rem;
+    font-size: 14px;
 }

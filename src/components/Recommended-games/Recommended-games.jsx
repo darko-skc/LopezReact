@@ -9,7 +9,7 @@ const RecommendedGames = ({allGames}) =>{
         <div className="Recommended-games--title"><h2>Similar</h2></div>
         {allGames.map((games)=>(
             
-                <CardRecommended key={games.id} id={games.id} name={games.name} img={games.frontpage_img} price={games.price_standard}></CardRecommended>
+                <CardRecommended key={games.id} id={games.id} name={games.name} img={games.frontpage_img} price={games.price_standard} valoration={games.valoration}></CardRecommended>
             
         ))}
         </div>

@@ -2,6 +2,22 @@
     transition: 0.5s;
 }
 
+.cart-notifaction::before{
+    content: attr(data-before);
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0.6rem;
+    right: 9.2rem;
+    border-radius: 50%;
+}
+
+
 .cart-icon:hover {
     cursor: pointer;
     color: rgb(209, 209, 209);

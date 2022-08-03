@@ -1,25 +1,24 @@
 import { BsFillCartFill} from 'react-icons/bs';
 import Cart from '../../Cart/Cart';
 import './Nav-bar_cart.css'
-import { useState } from 'react';
+import { useState , useContext } from 'react';
+import { CartContext } from '../../../context/CartContext';
 
 
 
 const NavBarCart = () =>{
     const [ state, setState ] = useState(false)
 
+    const {totalProduct} = useContext(CartContext)
+
     const stateModal = () =>{
-        if(state === false){
-            setState(true)
-        } else {
-            setState(false)
-        }
+        setState(!state)
     }
 
     return(
         <>
-        <BsFillCartFill className='cart-icon' onClick={stateModal}></BsFillCartFill>
-        <Cart state={state}></Cart>
+        <span className='cart-notifaction' data-before={totalProduct}><BsFillCartFill className='cart-icon' onClick={stateModal}></BsFillCartFill></span>
+        {state && <Cart/>}
         </>
     )
 }

@@ -15,11 +15,27 @@ const CartContextProvider = ({children}) =>{
         setCartList([])
     }
 
+    const delItem = (id) =>{
+        setCartList(cartList.filter((item) => item.id != id))
+    }
+
+    
+    let totalPrice = cartList.reduce((acc , item) =>{
+            return acc += (parseFloat(item.amount) * parseFloat(item.price_standard))
+    }, 0)
+
+    let totalProduct = cartList.reduce((acc , item) =>{
+        return acc += (parseInt(item.amount))
+    }, 0)
+
     return(
         <CartContext.Provider value={{
             cartList,
             addToCart,
-            delCart
+            delCart,
+            delItem,
+            totalPrice,
+            totalProduct
         }}>
             { children }
         </CartContext.Provider>

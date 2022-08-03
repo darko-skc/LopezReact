@@ -1,53 +1,65 @@
+import { useContext , useEffect } from 'react'
+import { CartContext } from '../../context/CartContext'
+import { Link } from 'react-router-dom';
 import './Cart.css'
-import { useState } from 'react'
 
-const TemplateCart = (props) =>{
-    const [amount, newamount] = useState(parseInt(props.amount))
-    let price = props.price
-    
-    const amount_add = () =>{
-        newamount(amount + 1)
-    }
 
-    const amount_subtract = () =>{
-        
-        newamount(amount - 1)
-    }
 
+const TemplateCart = ({img,name,price,amount,id}) =>{
+    const {delItem} = useContext(CartContext)
     return(
         <>
         <div className='Template-cart'>
-            <img className='Template-cart__img' src="../../image/farcry4/frontpage.jpeg" alt="" />
+            <img className='Template-cart__img' src={img} alt="" />
             <div className='Template-cart__info'>
-                <span className='Template-cart__name'>FarCry4</span>
-                <span className='Template-cart__price'>{props.price}</span>
+                <span className='Template-cart__name'>{name}</span>
+                <span className='Template-cart__price'>{`$${price}`}</span>
             </div>
-            <div className='Template-cart__amountbox'>
-                <span className='Template-cart__add' onClick={amount_add}>+</span>
-                <span className='Template-cart__amount'>{amount}</span>
-                <span className='Template-cart__subtract' onClick={amount_subtract}>-</span>
+            <span className='Template-cart__amount'>{amount}</span>
+            <div className='Template-cart__delete' onClick={() => delItem(id)}>  
+                <i id="Card-game__buttom" className="fa-solid fa-trash" ></i>
             </div>
         </div>
-        <div className='Template-cart__total'>
-            <span>Total</span>
-            <span>{price}</span>
-        </div>
+        
         </>
     )
 }
 
 
 
-const Cart = ({state}) =>{
-    if(state){
+const Cart = () =>{
+    
+    const {cartList,totalPrice} = useContext(CartContext)
+
+
+    
+    if(cartList.length === 0){
         return(
-            <>
-                <div className="Cart">
-                   <TemplateCart amount='1' price='50'></TemplateCart>
-                </div>
-            </>
-        )
+        <div className="Cart">
+            <h2>No tienes productos agregados</h2>
+        </div>)
     }
-}
+
+
+    return(
+        <>
+            <div className="Cart">
+                <div className='Cart-wid__container'>
+                    {cartList.map((item)=>(
+                    <TemplateCart id={item.id} key={item.id} name={item.name} img={item.frontpage_img} price={item.price_standard} amount={item.amount}></TemplateCart>
+                    ))}
+                </div>
+                <div className='Template-cart__total'>
+                    <span>Total</span>
+                    <span>{`$${totalPrice}`}</span>
+                </div>
+                <div className='Template-cart__button'>
+                    <Link to={'/cart'}><span>Ir al carrito</span></Link>
+                </div>
+            </div>
+            
+        </>
+    )
+    }
 
 export default Cart
